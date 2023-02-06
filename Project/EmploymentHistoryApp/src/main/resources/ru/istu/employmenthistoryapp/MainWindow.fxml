@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.istu.employmenthistoryapp.controllers.MainController">
+   <children>
+      <TabPane layoutX="2.0" prefHeight="768.0" prefWidth="848.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Добавление трудовой книжки">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="613.0" prefWidth="848.0">
+                     <children>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <HBox prefHeight="55.0" prefWidth="539.0">
+                                 <children>
+                                    <ImageView fitHeight="75.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@ico.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Label prefHeight="62.0" prefWidth="496.0" text="Добавление трудовой книжки">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="150.0" right="100.0" top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="25.0" prefWidth="634.0">
+                                 <children>
+                                    <Label prefHeight="25.0" prefWidth="60.0" text="Фамилия" textAlignment="CENTER" />
+                                    <TextField fx:id="surName" prefHeight="25.0" prefWidth="372.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="150.0" right="100.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="25.0" prefWidth="527.0">
+                                 <children>
+                                    <Label prefHeight="25.0" prefWidth="61.0" text="Имя">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="name" prefHeight="25.0" prefWidth="371.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="150.0" right="100.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="0.0" prefWidth="635.0">
+                                 <children>
+                                    <Label prefHeight="25.0" prefWidth="61.0" text="Отчество" />
+                                    <TextField fx:id="patronymic" prefHeight="25.0" prefWidth="370.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="150.0" right="100.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="0.0" prefWidth="635.0">
+                                 <children>
+                                    <Label prefHeight="25.0" prefWidth="96.0" text="Дата рождения" />
+                                    <DatePicker fx:id="dateOfBirth" editable="false" prefHeight="25.0" prefWidth="216.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="150.0" right="100.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="0.0" prefWidth="635.0">
+                                 <children>
+                                    <Label prefHeight="25.0" prefWidth="96.0" text="Образование" />
+                                    <ChoiceBox fx:id="education" prefHeight="25.0" prefWidth="217.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="150.0" right="100.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="0.0" prefWidth="635.0">
+                                 <children>
+                                    <Label prefHeight="25.0" prefWidth="168.0" text="Профессия, специальность" />
+                                    <TextField fx:id="profession" prefHeight="25.0" prefWidth="261.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="150.0" right="100.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #dbdbdb;">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="592.0" text="Добавление сведений о работе" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="250.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <HBox prefHeight="21.0" prefWidth="578.0">
+                                       <children>
+                                          <Label prefHeight="34.0" prefWidth="32.0" text="Дата" textAlignment="CENTER" />
+                                          <DatePicker fx:id="dateAddJobInfo" editable="false" prefHeight="25.0" prefWidth="184.0" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Label prefHeight="17.0" prefWidth="807.0" text="Сведения о приеме на работу, о переводах на другую работу и об увольнениях (с указанием причин и со ссылкой на статью, пункт закона)" />
+                                          <TextField fx:id="jobInfo">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </TextField>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Label prefHeight="17.0" prefWidth="827.0" text="На основании чего внесена запись (документ, его дата и номер)" />
+                                          <TextField fx:id="groundsJob" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <Button mnemonicParsing="false" onAction="#addJobDetails" prefHeight="39.0" prefWidth="177.0" text="Добавить сведения о работе">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="300.0" right="100.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </VBox>
+                              <TableView fx:id="jobInfoTable" prefHeight="317.0" prefWidth="828.0">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" />
+                                 </VBox.margin>
+                              </TableView>
+                              <Button mnemonicParsing="false" onAction="#addEmployeeHistory" prefHeight="44.0" prefWidth="426.0" text="Внести книжку в реестр">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="200.0" right="100.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Просмотр сведений и расчёт трудового стажа">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="577.0" prefWidth="577.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <VBox prefHeight="573.0" prefWidth="655.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <HBox prefHeight="304.0" prefWidth="828.0">
+                                 <children>
+                                    <VBox prefHeight="260.0" prefWidth="278.0" style="-fx-background-color: #dbdbdb;">
+                                       <children>
+                                          <Label text="Расчёт трудового стажа">
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" left="10.0" right="10.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <HBox prefHeight="270.0" prefWidth="276.0">
+                                             <children>
+                                                <Label fx:id="seniority" prefHeight="171.0" prefWidth="261.0" text="Трудовой стаж:">
+                                                   <HBox.margin>
+                                                      <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="314.0" prefWidth="550.0">
+                                       <children>
+                                          <Label prefHeight="30.0" prefWidth="562.0" text="Список трудовых книжек">
+                                             <padding>
+                                                <Insets left="10.0" right="10.0" />
+                                             </padding>
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <TableView fx:id="existEmployeesTable" prefHeight="301.0" prefWidth="550.0" />
+                                          <Button mnemonicParsing="false" onAction="#refreshJobsHistoryTable" text="Обновить список трудовых книжек">
+                                             <VBox.margin>
+                                                <Insets left="337.0" top="5.0" />
+                                             </VBox.margin>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <TableView fx:id="existJobInfoTable" prefHeight="423.0" prefWidth="828.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</Pane>
